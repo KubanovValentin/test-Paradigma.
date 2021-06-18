@@ -1,24 +1,32 @@
 
 * {
-    font-family: 'Calibri', sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    font-family: "Uni Neue", sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    
 }
-.container {
-    max-width: 1240px;
-    margin: 0 auto;
-    position: relative;
+html {
+    font-size: 1vw;
 }
 a {
     text-decoration: none;
     cursor: pointer;
 }
 
-
+@import './blocks/header';
 @import './blocks/interpreter';
 @import './blocks/primary';
 @import './blocks/modal';
 @import './blocks/form';
 @import './blocks/button';
+@import './blocks/slider';
+@import './blocks/carusel';
 
+@keyframes moveLight {
+    from {
+        transform: translateX(-4em) skewX(-45deg);
+    }
+    to {
+        transform: translateX(10em) skewX(-45deg);
+    }
+    }

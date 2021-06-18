@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
 		Профессиональный монтаж
@@ -32,6 +34,7 @@
     <meta name="theme-color" content="#ffffff">
     
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -40,15 +43,17 @@
             <nav>
                 <div class="header">
                     <div class="header__logo">
-                        <a class="header__logo menu__logo_img" href="">
-                            <img src="" alt="logo">
+                        <a class="header__logo header__logo_img" href="">
+                            <img src="img/logo/logo.png" alt="logo">
                         </a>
                         <div class="header__logo header__logo_text">
-                            <span>Профессиональный монтаж дымоходов</span>любой сложности на территории Киева и Киевской обл.
+                            <span>Профессиональный монтаж <br>
+                                дымоходов</span>любой сложности на
+                            территории Киева и Киевской обл.
                         </div>
                     </div>
                     <div class="header__map">
-                        
+                        <img src="img/logo/map.png" alt="">
                     </div>
 
                     <div class="translation__btns lang_buttons">
@@ -101,11 +106,49 @@
                     <div class="primary__cost-info"></div>
                     <div class="primary__cost-btn"></div>
                 </div>
-                <div class="primary__slider-certificates"></div>
+                <div class="carousel">
+                    <div class="container">
+                        <div class="carousel__inner">
+                            <div>
+                                <img src="img/slide_1.jpg" alt="slide_1">
+                            </div>
+                            <div>
+                                <img src="img/slide_2.jpg" alt="slide_2">
+                            </div>
+                            <div>
+                                <img src="img/slide_3.jpg" alt="slide_3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a href="#" class="button">Button</a>
         </div>
     </section>
-
+    <div class="primary__slider-certificates">
+        <div class="slider">
+            <div class="slider__inner">
+                <!-- <div>
+                    <img src="img/general/products_1.png" alt="">
+                </div>
+                <div>
+                    <img src="img/general/products_1.png" alt="">
+                </div>
+                <div>
+                    <img src="img/general/products_1.png" alt="">
+                </div> -->
+                <div>
+                    <img src="img/general/products_1.png" alt="">
+                </div>
+                <div>
+                    <img src="img/general/products_1.png" alt="">
+                </div>
+                <div>
+                    <img src="img/general/products_1.png" alt="">
+                </div>
+            </div>     
+        </div>
+    </div>
     <div class="overlay">
         <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>
@@ -127,12 +170,10 @@
 
     </div> 
 
-
-        <div class="container">
-            <a href="#" class="button">Button</a>
-        </div>  
-            
-    
+   
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/script.js"></script>    
 </body>

@@ -37,8 +37,21 @@ $(document).ready(function() {
         $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
     });
 
+    $(document).ready(function() {
+      $('.carousel__inner').slick({
+          speed: 1200,
+          // adaptiveHeight: true,
+          prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
+          nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>'
+          
+      });
 
-
+    window.addEventListener("mousewheel", function(e) {
+    if (e.ctrlKey) {
+      e.preventDefault();
+      return false;
+    }
+  });
 
 
 });
@@ -47,7 +60,4 @@ $(document).ready(function() {
 
 // fps counter created by: https://gist.github.com/sharkbrainguy/1156092,
 // no need to create my own :)
-
-
-
-
+});

@@ -1,45 +1,13 @@
 .primary {
-    width: 100%; /* ширина на всю ширину браузера */
-    height: 100vh; /* на всю высоту первого экрана */
-    display: flex; /* делаем контейнер гибким */
-    justify-content: center; /* по центру по горизонтали */
-    align-items: center; /* вертикальное центрирование */
+    background: url(../img/general/bgd.png) no-repeat center;
+    background-size: cover;
+    .container {
+        max-width: 85rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
 }
 
-.button {
-    display: inline-block;/* отображать как строчно-блочный элемент*/
-    text-decoration: none;/* убираем дефолтное подчеркивание у ссылки*/
-    font-family: 'Roboto Condensed';/*название шрифта*/
-    text-transform: uppercase;/*трансформация в заглавные буквы */
-    font-weight: 900;/*толщина шрифта*/
-    color: #fff;/*цвет текста на кнопке*/
-    font-size: 30px;/*размер шрифта*/
-    background-color: darkred;/* цвет кнопки */
-    padding: 20px 60px;/* расстояние от текста до края кнопки */
-    position: relative;/* относительное позиционирование */
-    border-radius: 10px;/* радиус скругления углов*/
-    overflow: hidden;/* спрятать все лишнее за пределами кнопки*/
-}
-.button:before {
-    content: ""; /* отображает псевдоэлемент */
-    position: absolute; /* абсолютное позиционирование */
-    top: 0; /* верхняя координата */
-    left: 0; /* левая координата */
-    width: 2em; /* относительная ширина */
-    height: 100%; /* высота как у оригинала */
-    background-color: rgba(255, 255, 255, 0.3); /* белый цвет с полупрозрачностью */
-    transform: translateX(-0.5em) skewX(-45deg);   
-    transform: translateX(-4em) skewX(-45deg);      
-}        
-.button:before {
-    animation: moveLight 3s infinite;
-}
 
-@keyframes moveLight {
-from {
-    transform: translateX(-4em) skewX(-45deg);
-}
-to {
-    transform: translateX(10em) skewX(-45deg);
-}
-}
+
