@@ -1,0 +1,21 @@
+.promo {
+    position: relative;
+    margin-top: 99px;
+    display: flex;
+    &__descr {
+        justify-content: flex-start;
+    }
+    &__text {
+        width: 650px;
+    }
+    &__images {
+        position: absolute;
+        top: -15%;
+        right: -26%;
+    }
+    &__subtext {
+        margin-top: 32px;
+        width: 324px;
+        margin-bottom: 42px;
+    }
+}

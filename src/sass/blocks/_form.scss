@@ -1,0 +1,30 @@
+form {
+    width: 391px;
+    height: 57px;
+    display: flex;
+    background-color: #f8f8f8;
+    text-align: center;
+    input {
+        width: 195px;
+        height: 57px;
+        padding-left: 32px;  
+        border: 1px solid #e1e1e1;
+        font-family: "SFUI Display";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 31px;
+        color: #141419;
+    }
+    button {
+        width: 195px;
+        height: 57px;
+        background-color: #fb973b;
+        border: none;
+        color: #ffffff;
+        font-family: "SFUI Display";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 31px;
+        cursor: pointer;
+    }
+}
