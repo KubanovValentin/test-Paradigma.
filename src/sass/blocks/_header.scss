@@ -1,4 +1,5 @@
 .header {
+    width: 85rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,5 +54,25 @@
                 line-height: normal;
             }
         }
+    }
+    &__consultation {
+        &:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+    }
+    &__contacts {
+        width: 11rem;
+    }
+    &__fhone {
+        color: #282728;
+        font-family: "Uni Neue Heavy";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 22px;
+        
+    }
+    &__social {
+        margin-top: 0.2rem;
+        margin-left: 1.3rem;
     }
 }

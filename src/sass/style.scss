@@ -3,7 +3,7 @@
     font-family: "Uni Neue", sans-serif;
     line-height: 1.2;
     font-weight: 400;
-    
+
 }
 html {
     font-size: 1vw;
@@ -24,9 +24,9 @@ a {
 
 @keyframes moveLight {
     from {
-        transform: translateX(-4em) skewX(-45deg);
+        transform: translateX(-5em) skewX(-45deg);
     }
     to {
-        transform: translateX(10em) skewX(-45deg);
+        transform: translateX(35em) skewX(-45deg);
     }
     }

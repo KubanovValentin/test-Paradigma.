@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".button.rus_lang").click(function () {
+    $(".btn.rus_lang").click(function () {
         //alert("Нажата кнопка АНГЛИЙСКИЙ");
         var rusLang = document.getElementsByClassName("rus_lang");
         var enLang = document.getElementsByClassName("en_lang");
@@ -11,7 +11,7 @@ $(document).ready(function() {
         }
       });
       
-      $(".button.en_lang").click(function () {
+      $(".btn.en_lang").click(function () {
         //alert("Нажата кнопка АНГЛИЙСКИЙ");
         var rusLang = document.getElementsByClassName("rus_lang");
         var enLang = document.getElementsByClassName("en_lang");
@@ -52,8 +52,6 @@ $(document).ready(function() {
       return false;
     }
   });
-
-
 });
 
 

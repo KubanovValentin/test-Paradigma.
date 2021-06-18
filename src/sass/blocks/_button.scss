@@ -1,29 +1,36 @@
-.blick {
-    display: inline-block;/* отображать как строчно-блочный элемент*/
-    text-decoration: none;/* убираем дефолтное подчеркивание у ссылки*/
-    font-family: 'Roboto Condensed';/*название шрифта*/
-    text-transform: uppercase;/*трансформация в заглавные буквы */
-    font-weight: 900;/*толщина шрифта*/
-    color: #fff;/*цвет текста на кнопке*/
-    font-size: 30px;/*размер шрифта*/
-    background-color: darkred;/* цвет кнопки */
-    padding: 20px 60px;/* расстояние от текста до края кнопки */
-    position: relative;/* относительное позиционирование */
-    border-radius: 10px;/* радиус скругления углов*/
-    overflow: hidden;/* спрятать все лишнее за пределами кнопки*/
-    
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    &::before {
+        content: ""; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 2em; 
+        height: 100%; 
+        background-color: rgba(255, 255, 255, 0.3); 
+        transform: translateX(-0.5em) skewX(-45deg);   
+        transform: translateX(-4em) skewX(-45deg);
+        animation: moveLight 3s infinite;      
+    }
+
+    &__consultation {
+        display: inline-block;
+        width: 13.1rem;
+        height: 3.7rem;
+        border-radius: .313rem;
+        background-color: #313d4b;
+        color: #ffffff;
+        font-family: "Uni Neue Bold";
+        font-size: 16px;
+        
+    }
 }
-.blick:before {
-    content: ""; /* отображает псевдоэлемент */
-    position: absolute; /* абсолютное позиционирование */
-    top: 0; /* верхняя координата */
-    left: 0; /* левая координата */
-    width: 2em; /* относительная ширина */
-    height: 100%; /* высота как у оригинала */
-    background-color: rgba(255, 255, 255, 0.3); /* белый цвет с полупрозрачностью */
-    transform: translateX(-0.5em) skewX(-45deg);   
-    transform: translateX(-4em) skewX(-45deg);      
-}        
-.blick:before {
-    animation: moveLight 3s infinite;
-}
+
+
