@@ -40,14 +40,22 @@
             <nav>
                 <div class="header">
                     <div class="header__logo">
-                        <a class="header__logo menu__logo_img" href="#">
+                        <a class="header__logo menu__logo_img" href="">
                             <img src="" alt="logo">
                         </a>
                         <div class="header__logo header__logo_text">
-                            <span></span>
+                            <span>Профессиональный монтаж дымоходов</span>любой сложности на территории Киева и Киевской обл.
                         </div>
                     </div>
-                    <div class="header__map"></div>
+                    <div class="header__map">
+                        
+                    </div>
+
+                    <div class="translation__btns lang_buttons">
+                        <a href="#" onclick="return false" class="button rus_lang">ENG</a>
+                        <a href="#" onclick="return false" class="button en_lang">RU</a>
+                    </div>
+
                     <div class="header__consultation rus_lang">
                         <button class="button__consultation ">Консультация инженера</button>
                         
@@ -61,7 +69,6 @@
                             <a class="header__fhone header__fhone_tel" href="tel:0674624242">0674624242</a>
                         </div>
                         <div class="header__social">
-                            <a class="header__icons header__icons_v" href="#">
                                 <img src="" alt="viber">
                             </a>
                             
@@ -78,10 +85,17 @@
             </nav>
             <div class="primary__countenance">
                 <img class="primary__img" src="" alt="">
-                <div class="primary__text"></div>
+                <div class="primary__text"><span>Виталий</span><br>Монтажник <br> Опыт работы с<br> дымоходами 9 лет</div>
             </div>
-            <h1 class="primary__title"></h1>
-            <div class="primary__activity"></div>
+            <h1 class="primary__title"><span>Узнайте стоимость монтажа дымохода</span>за 1 минуту, ответив на 6 вопросов</h1>
+            <div class="primary__activity">
+                <div class="primary__activity primary__activity_1">
+                    <div class="primary__activity primary__activity_numb">15</div>
+                    <div class="primary__activity primary__activity_txt"><span>лет устанавливаем дымоходы</span>для частных лиц и организаций</div>
+                </div>
+                <div class="primary__activity primary__activity_2"><span></span></div>
+                <div class="primary__activity primary__activity_3"><span></span></div>     
+            </div>
             <div class="primary__descr">
                 <div class="primary__price">
                     <div class="primary__cost-info"></div>
@@ -91,11 +105,34 @@
             </div>
         </div>
     </section>
-   
-    <div class="translation__btns lang_buttons">
-        <a href="#" onclick="return false" class="button rus_lang">ENG</a>
-        <a href="#" onclick="return false" class="button en_lang">RU</a>
-    </div>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_modal" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                
+                <button class="button button_submit modal-btn">заказать консультацию</button>
+            </form>
+        </div>
+
+        <div class="modal modal_polic" id="order">
+            <div class="modal__close">&times;</div>
+            
+        </div>
+
+    </div> 
+
+
+        <div class="container">
+            <a href="#" class="button">Button</a>
+        </div>  
+            
+    
     <script src="js/common.js"></script>
     <script src="js/script.js"></script>    
 </body>

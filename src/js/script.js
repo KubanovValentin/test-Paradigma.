@@ -22,6 +22,25 @@ $(document).ready(function() {
           enLang[i].style.left = "-9999px";
         }
       });
+
+
+      $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    
+    $('[data-modal=order]').on('click', function() {
+        $('.overlay, #order').fadeIn('slow');
+    });
+    
+    
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    });
+
+
+
+
+
 });
 
 
