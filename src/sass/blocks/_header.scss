@@ -55,6 +55,15 @@
             }
         }
     }
+    &__map {
+        width: 13rem;
+        height: 4rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     &__consultation {
         &:hover {
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
