@@ -1,13 +1,192 @@
 .primary {
+    position: relative;
+    width: 100vw;
+    height: 47rem;
     background: url(../img/general/bgd.png) no-repeat center;
     background-size: cover;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
     .container {
-        max-width: 85rem;
+        width: 85rem;
         margin: 0 auto;
-        width: 100%;
+    }
+    &__img {
+        position: absolute;
+        width: 25rem;
+        height: 33rem;
+        left: 65rem;
+        top: 14rem;
+    }
+    &__title {
+        width: 50.188rem;
+        height: 11.938rem;
+        color: #282728;
+        font-family: "Uni Neue Bold";
+        font-size: 3.75rem;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 4rem;
+        text-align: left;
+        span {
+            font-family: "Uni Neue Bold";
+            font-weight: 700;
+            line-height: 4rem;
+        }
+    }
+    &__activity {
+        width: 51rem;
+        height: 6rem;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    &__block-1 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1.438rem;
+            height: 0.3rem;
+            background-color: #fe5851;
+            left: .7rem;
+            top: .8rem;
+            -webkit-transform: translate(-100%, -100%) rotate(-45deg);
+            -ms-transform: translate(-100%, -100%) rotate(-45deg);
+            transform: translate(-100%, -100%) rotate(-45deg);
+        }
+    }
+    &__block-numb {
+        padding-bottom: 0.7rem;
+        color: #282728;
+        font-family: unset;
+        font-weight: 900;
+        font-size: 4.2rem;
+
+    }
+    &__block-text {
+        width: 11rem;
+        height: 3.938rem;
+        padding-left: 0.5rem;
+        font-family: "Uni Neue Book";
+        font-weight: 300;
+        span {
+            font-family: "Uni Neue Bold";
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+    }
+    &__block-2 {
+        position: relative;
+        width: 11.063rem;
+        height: 4rem;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1.438rem;
+            height: 0.3rem;
+            background-color: #fe5851;
+            left: 0rem;
+            top: 0rem;
+            -webkit-transform: translate(-100%, -100%) rotate(-45deg);
+            -ms-transform: translate(-100%, -100%) rotate(-45deg);
+            transform: translate(-100%, -100%) rotate(-45deg);
+        }
+        span {
+            font-family: "Uni Neue Bold";
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+    }
+    &__block-3 {
+        position: relative;
+        align-items: flex-end;
+        width: 9.688rem;
+        height: 4.188rem;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1.438rem;
+            height: 0.3rem;
+            background-color: #fe5851;
+            left: 0rem;
+            top: 0rem;
+            -webkit-transform: translate(-100%, -100%) rotate(-45deg);
+            -ms-transform: translate(-100%, -100%) rotate(-45deg);
+            transform: translate(-100%, -100%) rotate(-45deg);
+        }
+        span {
+            font-family: "Uni Neue Bold";
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+    }
+    &__descr {
+        display: flex;
+        width: 55rem;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__price {
+        margin-top: 3.3rem;
+    }
+    &__cost-info {
+        margin-bottom: 1rem;
+        color: #282728;
+        font-family: "Uni Neue Regular";
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        span {
+            padding: 0 0.18rem;
+            font-family: "Uni Neue Bold";
+            font-weight: 700;
+            border-radius: 0.3rem;
+            background-color:white;
+        }
+        
+    }
+    &__btn-wrapper {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        img {
+            width: 2.375rem;
+            height: 2.375rem;
+            opacity: 0.7;
+            margin-right: 1rem;
+        }
+    }
+    &__carousel {
+        margin-left: 4rem;
+        img {
+            width: 5rem;
+            height: 6rem;
+            cursor: pointer;
+            // &:hover {
+            //     transform: scale(5.8);
+            //     transition: all 0.9s ease;
+            // }
+        }
+    }
+    &__carousel-title {
+        color: #282728;
+        font-family: "Uni Neue Bold";
+        font-size: 1.063rem;
+        font-weight: bold;
+        line-height: 0.688rem;
+        text-align: center;
+    
     }
     
 }
-
-
-

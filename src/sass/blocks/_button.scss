@@ -7,6 +7,31 @@
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    &_cost {
+        display: flex;
+        width: 26.563rem;
+        height: 6.313rem;
+        box-shadow: 0 0.25rem 0 #e63c3c, 0 1.188rem 3.063rem rgba(254, 88, 81, 0.1), 
+        inset 0 0 2.875rem rgba(254, 81, 40, 0.2);
+        border-radius: 0.313rem;
+        background-color: #50bc5b;
+        background-image: linear-gradient(to top, #fe504f 0%, #fe744f 100%);
+        &:hover {
+            box-shadow: 0 14px 28px rgba(214, 23, 23, 0.25), 0 10px 10px rgba(231, 34, 34, 0.22);
+                }
+        a {
+            display: block;
+            color: #ffffff;
+            font-family: "Uni Neue Bold";
+            font-size: 1.063rem;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.023rem;
+        }        
+    }
     &::before {
         content: ""; 
         position: absolute; 
@@ -17,8 +42,9 @@
         background-color: rgba(255, 255, 255, 0.3); 
         transform: translateX(-0.5em) skewX(-45deg);   
         transform: translateX(-4em) skewX(-45deg);
-        animation: moveLight 3s infinite;      
+        animation: moveLight 3s infinite;     
     }
+    
 
     &__consultation {
         display: inline-block;
@@ -28,7 +54,7 @@
         background-color: #313d4b;
         color: #ffffff;
         font-family: "Uni Neue Bold";
-        font-size: 16px;
+        font-size: 0.8rem;
         
     }
 }
