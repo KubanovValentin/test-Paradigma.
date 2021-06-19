@@ -1,0 +1,25 @@
+.menu {
+    margin-top: 3rem;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+    &__link {
+        display: block;
+    }
+    a {
+        color: #282728;
+        font-family: "Uni Neue Bold";
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        &:hover {
+            color:red;
+            border-bottom: 0.2rem solid red;
+        }
+    }
+}

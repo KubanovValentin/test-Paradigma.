@@ -1,5 +1,6 @@
 .primary {
     position: relative;
+    padding-bottom: 4.9rem;
     width: 100vw;
     height: 47rem;
     background: url(../img/general/bgd.png) no-repeat center;
@@ -10,12 +11,15 @@
         width: 85rem;
         margin: 0 auto;
     }
+    &__menu {
+        height: 1rem;
+    }
     &__img {
         position: absolute;
         width: 25rem;
         height: 33rem;
         left: 65rem;
-        top: 14rem;
+        top: 19rem;
     }
     &__title {
         width: 50.188rem;
@@ -153,8 +157,7 @@
             font-weight: 700;
             border-radius: 0.3rem;
             background-color:white;
-        }
-        
+        }  
     }
     &__btn-wrapper {
         display: flex;
@@ -173,10 +176,6 @@
             width: 5rem;
             height: 6rem;
             cursor: pointer;
-            // &:hover {
-            //     transform: scale(5.8);
-            //     transition: all 0.9s ease;
-            // }
         }
     }
     &__carousel-title {

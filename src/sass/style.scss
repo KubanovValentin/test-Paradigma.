@@ -11,13 +11,14 @@ a {
 }
 
 @import './blocks/header';
+@import './blocks/menu';
 @import './blocks/interpreter';
 @import './blocks/primary';
 @import './blocks/modal';
 @import './blocks/form';
 @import './blocks/button';
-@import './blocks/slider';
 @import './blocks/carusel';
+@import './blocks/form';
 
 @keyframes moveLight {
     from {

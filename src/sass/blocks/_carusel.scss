@@ -1,5 +1,8 @@
+
+
+
 .carousel-wrapper {
-    height: 8.5rem;;
+    height: 8.5rem;
     position: relative;
     width: 20rem;
     margin: 0 auto;
@@ -11,27 +14,27 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 25px 50px;
+    padding: 1.2rem 2.2rem;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
 .arrow {
     border: solid black;
-    border-width: 0 3px 3px 0;
+    border-width: 0 0.3rem 0.3rem 0;
     display: inline-block;
-    padding: 12px;
+    padding: 0.5rem;
 }
 
 .arrow-prev {
-    left: -30px;
+    left: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%) rotate(135deg);
 }
 
 .arrow-next {
-    right: -30px;
+    right: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
@@ -51,27 +54,23 @@
 }
 
 
-/*Select every element*/
+
 [id^="item"] {
     display: none;
 }
 
 .item-1 {
     z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    
+    opacity: 1;
+    background-size: cover;
 }
 
 .item-2 {
-    display: flex;
-    justify-content: space-around;
+    background-size: cover;
 }
 
 .item-3 {
-    display: flex;
-    justify-content: center;
-    
+    background-size: cover;
 }
 
 *:target~.item-1 {

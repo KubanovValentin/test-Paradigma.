@@ -67,11 +67,11 @@
                     </div>
 
                     <div class="header__consultation rus_lang">
-                        <button class="button button__consultation ">Консультация инженера</button>
+                        <button data-modal="consultation" class="button button__consultation ">Консультация инженера</button>
                         
                     </div>
                     <div class="header__consultation en_lang">
-                        <button class="button button__consultation ">Engineer's consultation</button>
+                        <button data-modal="consultation" class="button button__consultation ">Engineer's consultation</button>
                     </div>
                     <div class="header__contacts">
                         <div class="header__fhone">
@@ -93,6 +93,66 @@
                     </div>
                 </div>
             </nav>
+            <div class="praimory__menu">
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="biography.html" class="menu__link">
+                                <div class="menu__text rus_lang">калькулятор</div>
+                                <div class="menu__text en_lang">calculator</div>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <div class="menu__text rus_lang">услуги</div>
+                                <div class="menu__text en_lang">services</div>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <div class="menu__text rus_lang">наши новости</div>
+                                <div class="menu__text en_lang">our news</div>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <div class="menu__text rus_lang">отзывы</div>
+                                <div class="menu__text en_lang">reviews</div>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <div class="menu__text rus_lang">консультация</div>
+                                <div class="menu__text en_lang">consultation</div>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <div class="menu__text rus_lang">преимущества</div>
+                                <div class="menu__text en_lang">advantages</div>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <div class="menu__text rus_lang">производство</div>
+                                <div class="menu__text en_lang">production</div>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <div class="menu__text rus_lang">вопрос-ответ</div>
+                                <div class="menu__text en_lang">q & A</div>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <div class="menu__text rus_lang">контакты</div>
+                                <div class="menu__text en_lang">contacts</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="primary__countenance">
                 <img class="primary__img" src="img/general/man.png" alt="">
                 <!-- <div class="primary__text"><span>Виталий</span><br>Монтажник <br> Опыт работы с<br> дымоходами 9 лет</div> -->
@@ -161,9 +221,7 @@
                     <div class="primary__carousel-title rus_lang">Лицензии и сертификаты в наличии</div>
                     <div class="primary__carousel-title en_lang">Licenses and certificates available</div>
                     <div class="carousel-wrapper">
-                        <span id="item-1">
-
-                        </span>
+                        <span id="item-1"></span>
                         <span id="item-2"></span>
                         <span id="item-3"></span>
                         <div class="carousel-item item-1">
@@ -205,12 +263,6 @@
                 <button class="button button_submit modal-btn">заказать консультацию</button>
             </form>
         </div>
-
-        <div class="modal modal_polic" id="order">
-            <div class="modal__close">&times;</div>
-            
-        </div>
-
     </div> 
 
    
