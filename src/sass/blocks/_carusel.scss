@@ -17,6 +17,16 @@
     padding: 1.2rem 2.2rem;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    img {
+        &:hover {
+            position: relative;
+            z-index: 1000;
+            transform: scale(3);
+            -webkit-transform: scale(3);
+            -moz-transform: scale(3);
+            -o-transform: scale(3);
+        }
+    }
 }
 
 .arrow {
